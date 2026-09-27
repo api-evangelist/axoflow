@@ -1,23 +1,51 @@
 aid: axoflow
+
 name: Axoflow
-description: 'Axoflow is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Axoflow is a company identified in the API Evangelist harvest backlog as a stub entry. No public website or detailed information could be located through standard web searches, indicating that the company may be early‑stage, private, or otherwise not publicly documented. This profile records the limited available data and marks the need for future verification when more information becomes available.'
+
 url: https://raw.githubusercontent.com/api-evangelist/axoflow/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
 - Company
-apis: []
+- Data
+- Workflow
+- Automation
+- Integration
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/axoflow-hosts.yml
+- type: Vendors
+  url: vendors/axoflow-vendors.yml
+- type: DomainSecurity
+  url: security/axoflow-domain-security.yml
 - type: Website
   url: https://www.nasdaqprivatemarket.com/
+
+apis: []
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 4
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
